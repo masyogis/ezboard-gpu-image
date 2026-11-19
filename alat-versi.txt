@@ -1,0 +1,6 @@
+# Alat di image GPU (ghcr.io/masyogis/ezboard-gpu). Ubah berkas ini bila alat yang dibutuhkan berubah (naikkan "image"):
+# mesin yang image-nya beda lalu memasang alat seperti dulu (cadangan) dan Pemakaian -> GPU menandai "image perlu dibangun ulang".
+image=1
+node=22.11.0
+blender=4.0.2
+three=0.149.0
