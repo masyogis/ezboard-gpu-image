@@ -3,6 +3,8 @@
 # pemasangan alat lewat 8 menit). Dasarnya image RunPod yang sama dengan sebelumnya (biasanya sudah ada di mesin RunPod,
 # jadi hanya lapisan alat ini yang diunduh); start.sh RunPod (SSH dengan PUBLIC_KEY) tetap dipakai, CMD tidak diubah.
 FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
+# links the ghcr.io package to its repo (the repo's Actions may then write to it)
+LABEL org.opencontainers.image.source=https://github.com/masyogis/ezboard-gpu-image
 ENV DEBIAN_FRONTEND=noninteractive
 
 # paket Ubuntu: ffmpeg, rsync, komponen grafis EGL/GL untuk Chrome dan Blender tanpa layar
